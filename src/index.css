@@ -1,11 +1,48 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "tailwindcss/base";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@layer base {
+  @font-face {
+    font-family: 'RedHat-400';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../public/assets/fonts/RedHatText-VariableFont_wght.ttf') format('ttf');
+  }
+
+  @font-face {
+    font-family: 'RedHat-600';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('../public/assets/fonts/RedHatText-VariableFont_wght.ttf') format('ttf');
+  }
+
+  
+  @font-face {
+    font-family: 'RedHat-700';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../public/assets/fonts/RedHatText-VariableFont_wght.ttf') format('ttf');
+  }
+
+  @font-face {
+    font-family: 'RedHat-italic';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../public/assets/fonts/RedHatText-Italic-VariableFont_wght.ttf') format('ttf');
+  }
+}
+
+
+:root {
+  font-family: 'RedHat-400',sans-serif;
+  background-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
