@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Heading />
-      <div className="grid xl:grid-cols-3 gap-3">
+      <div className="grid md:grid-cols-3 gap-3">
         {data?.map((item, index) => (
           <GridItem key={index} data={item} />
         ))}

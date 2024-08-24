@@ -1,3 +1,5 @@
+import Button from "../button";
+
 interface dataProps {
   data: {
     image: {
@@ -15,8 +17,10 @@ interface dataProps {
 function GridItem({ data }: dataProps) {
   return (
     <div>
-      <img className="w-full rounded-md" src={data.image.mobile} />
-      <button>add to cart</button>
+      <div>
+        <img className="w-full rounded-md" src={data.image.mobile} />
+        <Button />
+      </div>
       <p>{data.category}</p>
       <p>{data.name}</p>
       <p>{data.price}</p>
