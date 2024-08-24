@@ -1,4 +1,5 @@
-import Button from "../button";
+import { formatCurrency } from "../../utility";
+import AddToCartBtn from "../button";
 
 interface dataProps {
   data: {
@@ -19,11 +20,13 @@ function GridItem({ data }: dataProps) {
     <div>
       <div>
         <img className="w-full rounded-md" src={data.image.mobile} />
-        <Button />
+        <AddToCartBtn />
       </div>
-      <p>{data.category}</p>
-      <p>{data.name}</p>
-      <p>{data.price}</p>
+      <p className="text-rose-400 m-0 mb-2">{data.category}</p>
+      <p className="font-semibold text-xl m-0 mb-2">{data.name}</p>
+      <p className="text-price font-bold text-xl m-0">
+        {formatCurrency(data.price)}
+      </p>
     </div>
   );
 }

@@ -12,6 +12,8 @@ export default {
       '5xl': '3.052rem',
     },
     colors: {
+      'grey-bg': '#F2F1F0',
+      'price': 'rgb(199 55 0);',
       'red': 'hsl(14, 86%, 42%)',
       'green': 'hsl(159, 69%, 38%)',
       'rose-50': 'hsl(20, 50%, 98%)',
